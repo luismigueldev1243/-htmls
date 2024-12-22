@@ -1,0 +1,19 @@
+<script src="https://unpkg.com/htmx.org@2.0.1"></script>
+<div class="main" style="display: flex; flex-direction: column">
+  <button
+    hx-target="#res"
+    hx-put="/clicked"
+    hx-swap="innerHTML"
+    style="
+      height: 50px;
+      width: 165px;
+      color: whitesmoke;
+      background-color: rgb(33, 190, 33);
+      border: none;
+      border-radius: 20px;
+    "
+  >
+    Click Me
+  </button>
+  <div id="res"></div>
+</div>
